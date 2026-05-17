@@ -40,7 +40,7 @@ function sendMessage() {
 
 sendBtn,addEventListener('click', sendMessage);
 
-messageInput.addEventLisner('keypress', function(event) {
+messageInput.addEventListener('keypress', function(event) {
     if (event.key === 'Enter') {
         sendMessage();
     }
