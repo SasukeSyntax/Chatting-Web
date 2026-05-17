@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Real-time</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div  id="welcome-screen">
+        <h1 id="yo-twin">
+            Yo twin, whats your nickname?
+        </h1>
+        <input type="text" id="nickname-input" placeholder="Type it here twin.." autocomplete="off">
+        <button id="enter-btn">Enter Chat</button>
+    </div>
+
+    <div id="chat-screen" style="display: none;">
+        <h2 id="welcome-mess">
+            Hellow twin!
+        </h2>
+        <div id="messages"></div>
+        <input type="text" id="message-input" placeholder="Type a message twin..">
+    </div>
+
+    <script src="index.js"></script>
+</body>
+</html>
