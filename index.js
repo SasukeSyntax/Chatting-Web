@@ -120,6 +120,18 @@ enterBtn.addEventListener('click', function(){
     }
 });
 
+nicknameInput.addEventListener('keypress', function(event) {
+    if (event.key === 'Enter') {
+        myNickname = nicknameInput.value.trim();
+    if (myNickname !== ""){
+        welcomeScreen.style.display = 'none';
+        chatScreen.style.display = 'block';
+        welcomeMessage.innerText = `Logged in as: ${myNickname}`;
+    } else {
+        alert("Put a nickname twin.");
+    }
+    }
+});
 
 function sendMessage() {
     let msgText = messageInput.value.trim();
